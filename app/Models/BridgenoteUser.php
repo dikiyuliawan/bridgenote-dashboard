@@ -10,6 +10,5 @@ class BridgenoteUser extends Model
     use HasFactory;
 
     protected $table = 'bridgenote_user';
-
     protected $fillable = ['status', 'position'];
 }

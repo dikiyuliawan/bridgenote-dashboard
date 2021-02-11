@@ -15,8 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//login
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/postlogin', [AuthController::class, 'postLogin']);
 Route::get('/logout', [AuthController::class, 'logout']);
 
+//dashboard
 Route::get('/', [DashboardController::class, 'index'])->middleware('auth');
